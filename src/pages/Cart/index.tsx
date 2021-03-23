@@ -30,7 +30,7 @@ const Cart = (): JSX.Element => {
       cart.reduce((sumTotal, product) => {
         return sumTotal + product.price * product.amount;
       }, 0)
-    )
+    );
 
   function handleProductIncrement(product: Product) {
     updateProductAmount({
